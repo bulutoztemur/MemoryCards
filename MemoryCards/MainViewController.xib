@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MemoryCards" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="50Z-Ji-9DP" id="Hfq-Ht-sdh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="50Z-Ji-9DP">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-0E-w9E">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PLAY" translatesAutoresizingMaskIntoConstraints="NO" id="JKi-u9-IZh">
+                    <rect key="frame" x="64.666666666666686" y="118.33333333333331" width="285" height="106.66666666666669"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="u6p-Au-mkQ">
+                    <rect key="frame" x="64.666666666666686" y="265" width="285" height="366"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBO-T2-GyX">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
+                            <state key="normal" backgroundImage="2x3"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openCategory2x3:" destination="-1" eventType="touchUpInside" id="5HM-xe-rsC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp8-KR-OFm">
+                            <rect key="frame" x="0.0" y="99" width="285" height="69"/>
+                            <state key="normal" backgroundImage="3x4"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openCategory3x4:" destination="-1" eventType="touchUpInside" id="2kL-Ha-SfR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6G-y2-jsy">
+                            <rect key="frame" x="0.0" y="198" width="285" height="69"/>
+                            <state key="normal" backgroundImage="4x6"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openCategory4x6:" destination="-1" eventType="touchUpInside" id="bCP-Gi-dNG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-iI-xb5">
+                            <rect key="frame" x="0.0" y="297" width="285" height="69"/>
+                            <state key="normal" backgroundImage="6x8"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openCategory6x8:" destination="-1" eventType="touchUpInside" id="5kZ-Zy-AGg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dvS-mz-5Xc"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YRd-0E-w9E" secondAttribute="trailing" id="8Os-hj-DSp"/>
+                <constraint firstAttribute="bottom" secondItem="YRd-0E-w9E" secondAttribute="bottom" id="Azl-oR-ya3"/>
+                <constraint firstItem="YRd-0E-w9E" firstAttribute="top" secondItem="50Z-Ji-9DP" secondAttribute="top" id="DIs-PB-eM0"/>
+                <constraint firstItem="u6p-Au-mkQ" firstAttribute="centerY" secondItem="50Z-Ji-9DP" secondAttribute="centerY" id="FAC-Dq-uUU"/>
+                <constraint firstItem="JKi-u9-IZh" firstAttribute="centerX" secondItem="u6p-Au-mkQ" secondAttribute="centerX" id="YpF-vE-d4U"/>
+                <constraint firstItem="u6p-Au-mkQ" firstAttribute="centerX" secondItem="50Z-Ji-9DP" secondAttribute="centerX" id="hTH-Xn-kJx"/>
+                <constraint firstItem="YRd-0E-w9E" firstAttribute="leading" secondItem="50Z-Ji-9DP" secondAttribute="leading" id="kpM-vr-jdN"/>
+                <constraint firstItem="u6p-Au-mkQ" firstAttribute="top" secondItem="JKi-u9-IZh" secondAttribute="bottom" constant="40" id="rFV-cl-XE7"/>
+            </constraints>
+            <point key="canvasLocation" x="27.536231884057973" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2x3" width="285" height="69"/>
+        <image name="3x4" width="285" height="69"/>
+        <image name="4x6" width="285" height="69"/>
+        <image name="6x8" width="285" height="69"/>
+        <image name="PLAY" width="285" height="106.66666412353516"/>
+        <image name="clouds" width="588" height="585.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

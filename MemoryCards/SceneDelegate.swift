@@ -16,8 +16,41 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = LoginViewController()
+        window?.makeKeyAndVisible()
     }
+    
+    func createMainNavigationController() -> UIViewController {
+        // we create the view controller and insert into the nav controller and return
+        let mainVC = MainViewController()
+        mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        return mainVC
+        /*mainVC.title = "Play"
+        // it is a system tabbaritem , tag zero because it is the first one
+        mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        return UINavigationController(rootViewController: mainVC) */
+    }
+
+    func createRecordsNavigationController() -> UINavigationController {
+        let recordsVC = RecordsViewController()
+        recordsVC.title = "Records"
+        // it is a system tabbaritem , tag zero because it is the first one
+        recordsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        return UINavigationController(rootViewController: recordsVC)
+    }
+
+    func createTabBar() -> UITabBarController {
+        let tabbar = UITabBarController()
+        // here we assign a tint to all our tabbars, this will be visible on the items (icons)
+        UITabBar.appearance().tintColor = .systemBlue
+        // replace our array variables with the functions we created
+        tabbar.viewControllers = [createMainNavigationController(), createRecordsNavigationController(), createRecordsNavigationController(), createRecordsNavigationController(), createRecordsNavigationController()]
+        return tabbar
+    }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

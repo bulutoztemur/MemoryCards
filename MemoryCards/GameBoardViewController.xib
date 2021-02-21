@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameBoardViewController" customModule="MemoryCards" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="hSV-ik-oMe" id="WQC-HJ-47T"/>
+                <outlet property="matchedLabel" destination="CPJ-w2-876" id="t7Z-jI-whX"/>
+                <outlet property="timerLabel" destination="yaL-al-sbf" id="gra-c7-Fa8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamebg" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-p5-UpM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-w2-876">
+                    <rect key="frame" x="207" y="44" width="197" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaL-al-sbf">
+                    <rect key="frame" x="10" y="44" width="197" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-ik-oMe">
+                    <rect key="frame" x="10" y="65" width="394" height="797"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pPv-bO-k9J">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hS7-p5-UpM" secondAttribute="bottom" id="6tR-V2-6yS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="centerX" secondItem="yaL-al-sbf" secondAttribute="trailing" id="DUf-rg-Rh3"/>
+                <constraint firstItem="yaL-al-sbf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Dog-UT-2BI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hSV-ik-oMe" secondAttribute="trailing" constant="10" id="FM7-72-mjR"/>
+                <constraint firstItem="hSV-ik-oMe" firstAttribute="top" secondItem="yaL-al-sbf" secondAttribute="bottom" id="MG3-dq-CFk"/>
+                <constraint firstAttribute="trailing" secondItem="hS7-p5-UpM" secondAttribute="trailing" id="Myn-DR-FC0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CPJ-w2-876" secondAttribute="trailing" constant="10" id="Ob3-CN-0HQ"/>
+                <constraint firstItem="CPJ-w2-876" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RcA-1M-UkD"/>
+                <constraint firstItem="hS7-p5-UpM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aSE-cE-dWr"/>
+                <constraint firstItem="hS7-p5-UpM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dcl-t7-FPI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hSV-ik-oMe" secondAttribute="bottom" id="ls3-d4-9vQ"/>
+                <constraint firstItem="CPJ-w2-876" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sm8-rI-PA6"/>
+                <constraint firstItem="yaL-al-sbf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="toH-Dk-DRt"/>
+                <constraint firstItem="hSV-ik-oMe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="zAC-jr-LMJ"/>
+            </constraints>
+            <point key="canvasLocation" x="28" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gamebg" width="736" height="414"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

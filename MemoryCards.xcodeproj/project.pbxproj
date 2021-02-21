@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		176895D225E11BA50050AA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895D125E11BA50050AA6B /* AppDelegate.swift */; };
 		176895D425E11BA50050AA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895D325E11BA50050AA6B /* SceneDelegate.swift */; };
-		176895D625E11BA50050AA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895D525E11BA50050AA6B /* ViewController.swift */; };
-		176895D925E11BA50050AA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176895D725E11BA50050AA6B /* Main.storyboard */; };
-		176895DB25E11BA60050AA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176895DA25E11BA60050AA6B /* Assets.xcassets */; };
 		176895DE25E11BA60050AA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176895DC25E11BA60050AA6B /* LaunchScreen.storyboard */; };
+		176895EB25E11E9B0050AA6B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895EA25E11E9B0050AA6B /* MainViewController.swift */; };
+		176895EE25E11F690050AA6B /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895ED25E11F690050AA6B /* RecordsViewController.swift */; };
+		176895F125E131D00050AA6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176895F025E131D00050AA6B /* LoginViewController.swift */; };
+		176895F825E132830050AA6B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176895F725E132830050AA6B /* LoginViewController.xib */; };
+		176895FF25E1A90A0050AA6B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176895FE25E1A90A0050AA6B /* MainViewController.xib */; };
+		1768960325E1B7690050AA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1768960225E1B7690050AA6B /* Assets.xcassets */; };
+		1768960925E1BF5E0050AA6B /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768960725E1BF5E0050AA6B /* GameBoardViewController.swift */; };
+		1768960A25E1BF5E0050AA6B /* GameBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1768960825E1BF5E0050AA6B /* GameBoardViewController.xib */; };
+		1768961425E273620050AA6B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768961325E273620050AA6B /* Card.swift */; };
+		1768961725E273930050AA6B /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768961625E273930050AA6B /* CardModel.swift */; };
+		1768962325E2763F0050AA6B /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768962125E2763F0050AA6B /* CardCollectionViewCell.swift */; };
+		1768962425E2763F0050AA6B /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1768962225E2763F0050AA6B /* CardCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		176895CE25E11BA50050AA6B /* MemoryCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176895D125E11BA50050AA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176895D325E11BA50050AA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		176895D525E11BA50050AA6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		176895D825E11BA50050AA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		176895DA25E11BA60050AA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176895DD25E11BA60050AA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176895DF25E11BA60050AA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176895EA25E11E9B0050AA6B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		176895ED25E11F690050AA6B /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		176895F025E131D00050AA6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		176895F725E132830050AA6B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		176895FE25E1A90A0050AA6B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1768960225E1B7690050AA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1768960725E1BF5E0050AA6B /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
+		1768960825E1BF5E0050AA6B /* GameBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameBoardViewController.xib; sourceTree = "<group>"; };
+		1768961325E273620050AA6B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1768961625E273930050AA6B /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		1768962125E2763F0050AA6B /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		1768962225E2763F0050AA6B /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +74,22 @@
 		176895D025E11BA50050AA6B /* MemoryCards */ = {
 			isa = PBXGroup;
 			children = (
+				1768960225E1B7690050AA6B /* Assets.xcassets */,
 				176895D125E11BA50050AA6B /* AppDelegate.swift */,
 				176895D325E11BA50050AA6B /* SceneDelegate.swift */,
-				176895D525E11BA50050AA6B /* ViewController.swift */,
-				176895D725E11BA50050AA6B /* Main.storyboard */,
-				176895DA25E11BA60050AA6B /* Assets.xcassets */,
 				176895DC25E11BA60050AA6B /* LaunchScreen.storyboard */,
 				176895DF25E11BA60050AA6B /* Info.plist */,
+				176895EA25E11E9B0050AA6B /* MainViewController.swift */,
+				176895FE25E1A90A0050AA6B /* MainViewController.xib */,
+				176895ED25E11F690050AA6B /* RecordsViewController.swift */,
+				176895F025E131D00050AA6B /* LoginViewController.swift */,
+				176895F725E132830050AA6B /* LoginViewController.xib */,
+				1768960725E1BF5E0050AA6B /* GameBoardViewController.swift */,
+				1768960825E1BF5E0050AA6B /* GameBoardViewController.xib */,
+				1768961325E273620050AA6B /* Card.swift */,
+				1768961625E273930050AA6B /* CardModel.swift */,
+				1768962125E2763F0050AA6B /* CardCollectionViewCell.swift */,
+				1768962225E2763F0050AA6B /* CardCollectionViewCell.xib */,
 			);
 			path = MemoryCards;
 			sourceTree = "<group>";
@@ -124,9 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176895F825E132830050AA6B /* LoginViewController.xib in Resources */,
 				176895DE25E11BA60050AA6B /* LaunchScreen.storyboard in Resources */,
-				176895DB25E11BA60050AA6B /* Assets.xcassets in Resources */,
-				176895D925E11BA50050AA6B /* Main.storyboard in Resources */,
+				1768960325E1B7690050AA6B /* Assets.xcassets in Resources */,
+				176895FF25E1A90A0050AA6B /* MainViewController.xib in Resources */,
+				1768962425E2763F0050AA6B /* CardCollectionViewCell.xib in Resources */,
+				1768960A25E1BF5E0050AA6B /* GameBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +167,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176895D625E11BA50050AA6B /* ViewController.swift in Sources */,
+				176895F125E131D00050AA6B /* LoginViewController.swift in Sources */,
 				176895D225E11BA50050AA6B /* AppDelegate.swift in Sources */,
 				176895D425E11BA50050AA6B /* SceneDelegate.swift in Sources */,
+				176895EB25E11E9B0050AA6B /* MainViewController.swift in Sources */,
+				1768961725E273930050AA6B /* CardModel.swift in Sources */,
+				176895EE25E11F690050AA6B /* RecordsViewController.swift in Sources */,
+				1768960925E1BF5E0050AA6B /* GameBoardViewController.swift in Sources */,
+				1768962325E2763F0050AA6B /* CardCollectionViewCell.swift in Sources */,
+				1768961425E273620050AA6B /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		176895D725E11BA50050AA6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				176895D825E11BA50050AA6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		176895DC25E11BA60050AA6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
